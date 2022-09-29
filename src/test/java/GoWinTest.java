@@ -5,8 +5,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class GoWinTest {
 
     @Test
-    public void shouldBeBar() {
-        String response = "foo";
-        assertEquals("bar", response);
+    public void turnOneShouldSayOne() {
+        GoWinGame game = new GoWinGame();
+
+        String response = game.evaluate(1);
+
+        assertEquals("1", response);
     }
 }
